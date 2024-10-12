@@ -2,4 +2,7 @@
 
 ## Uso
 ### 1. 
-Ejecuta el archivo Makefile con el comando: make
+Para compilar el archivo Tarea1.cpp debemos ejecutar el archivo MakeFile con el comando: make 
+
+### 2.
+Ejecutar 
