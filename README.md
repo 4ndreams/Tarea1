@@ -8,3 +8,8 @@
 > [!NOTE]
 >  Los valores 100 y 3 representan los kilometros y cantidad de buses respectivamente.
 
+
+> Autores: - Leandro Cortés Benavides
+>          - Andrea Tapia Zúñiga
+>
+> Como grupo quisimos personalizar nuetro codigo, agregando colores y una mini simulación de carrera, esperamos que esto no afecte en los resultados de la evaluación :) 
