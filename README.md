@@ -1,5 +1,5 @@
-### Tarea 1 Sistemas Operativos
+# Tarea 1 Sistemas Operativos
 
-'''markdown
-### Uso
-1. Ejecuta el archivo Makefile con el comando
+## Uso
+### 1. 
+Ejecuta el archivo Makefile con el comando: make
