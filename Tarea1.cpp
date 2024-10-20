@@ -5,10 +5,10 @@
 #include <chrono>
 #include <cstdlib>
 
-std::mutex mtx;  // Mutex para sincronizar la salida en la consola
-int posicion = 1; // Posición para saber el orden de llegada de los autos
+std::mutex mtx;  
+int posicion = 1; 
 
-// Definiciones de colores ANSI
+// Definición de los colores
 const std::string RESET = "\033[0m";
 const std::string RED = "\033[31m";
 const std::string GREEN = "\033[32m";
@@ -17,15 +17,14 @@ const std::string BLUE = "\033[34m";
 const std::string MAGENTA = "\033[35m";
 const std::string CYAN = "\033[36m";
 
-// Ancho de la pantalla de la terminal (ajustar según sea necesario)
-const int WIDTH = 70;
+// Ancho de la pantalla (esto se puede cambiar para la visibilidad de la carrera)
+const int WIDTH = 100;
 
-// Función que simula el avance de cada automóvil
 void carrera_auto(int id, int M) {
     int distancia_recorrida = 0;
     std::string color;
 
-    // Asignar un color diferente a cada auto
+    // Asignar un color a cada auto
     switch (id % 6) {
         case 0: color = RED; break;
         case 1: color = GREEN; break;
@@ -44,8 +43,7 @@ void carrera_auto(int id, int M) {
 
         {
             std::lock_guard<std::mutex> guard(mtx);
-            //std::cout << "\033[H\033[J";  // Limpiar la pantalla
-            for (int i = 0; i <= id; ++i) std::cout << std::endl;  // Mover la posición del cursor hacia abajo
+            for (int i = 0; i <= id; ++i) std::cout << std::endl;
             for (int i = 0; i < distancia_recorrida % WIDTH; ++i) std::cout << " ";
             std::cout << color << "Auto " << id +1 << " 🚗 " << distancia_recorrida << "[mt]"<< RESET << std::endl;
         }
