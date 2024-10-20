@@ -6,7 +6,10 @@
  2. Ejecutar el archivo Tarea1.cpp ingresando en la terminal el comando: ./tarea 100 3
     
 > [!NOTE]
->  Los valores 100 y 3 representan los kilometros y cantidad de buses respectivamente.
+>  Los valores 100 y 3 representan los kilometros y cantidad de buses(hebras) respectivamente.
+
+> [!NOTE]
+>  Si se ejecuta el comando htop en una terminal distinta, se pueden ver las distintas hebras creadas
 
 
 > Autores: - Leandro Cortés Benavides
